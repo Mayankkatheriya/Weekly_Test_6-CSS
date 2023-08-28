@@ -26,7 +26,16 @@ button {
   color: black;
   text-decoration: none;
 }
-
+.black{
+  width: 100%;
+  height: 2.3vh;
+  background-color: black;
+}
+.grey{
+  width: 100%;
+  height: 1vh;
+  background-color: rgb(232,233,234);
+}
 .header {
   background-color: white;
   opacity: 0.8;
@@ -153,6 +162,123 @@ button {
   gap: 8rem;
   align-items: center;
 }
+/* ------------------middle-hero---------------- */
+
+.mid-content{
+  width: 100%;
+  /* border: 2px solid red; */
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mid-content h1{
+  text-align: center;
+  font-size: 32px;
+  line-height: 36px;
+}
+.mid-content .p1 span, .mid-content .p3{
+  font-size: 15px;
+  line-height: 18.75px;
+  font-weight: 600;
+}
+.mid-content .p1, .mid-content .p2{
+  width: 20%;
+  text-align: center;
+  margin: 1% 0;
+  font-size: 15px;
+  line-height: 18.75px;  
+}
+.mid-content .p2 span, .mid-content .p2 a{
+  font-size: 15px;
+  line-height: 18.75px;  
+  color: red;
+}
+.mid-content .p2 span{
+  cursor: pointer;
+}
+.mid-content .p2{
+  width: 46%;
+}
+.mid-content .p2 a{
+  text-decoration: underline;
+}
+.big-card1{
+  /* border: 2px solid red;  */
+  display: flex;
+  justify-content: space-around;
+  padding: 3% 6%;
+  
+}
+.big-card1 .image{
+  overflow: hidden;
+  width: 45%;
+  /* border: 2px solid blue;   */
+}
+.big-card1 .image img:hover{
+  transform: scale(1.2);
+}
+.big-card1 .image img{
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.big-card1 .content{
+  width: 45%;
+  /* border: 2px solid blue;   */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.big-card1 .content h1{
+  font-size: 32px;
+  line-height: 38.4px;
+}
+.big-card1 .content p,
+.big-card1 .content button,
+.big-card1 .content h4{
+  font-size: 15px;
+  line-height: 22.5px;
+}
+.big-card1 .content button{
+  border-radius: 40px;
+  padding: 1.5% 0;
+  width: 25%;
+  color: white;
+  background-color: rgb(255,74,50);
+  border: none;
+  cursor: pointer;
+}
+.big-card1 .content button:hover{
+  background-color: rgb(96, 96, 96);
+}
+.big-card1 .card-image{
+  width: 100%;
+  /* border: 2px solid blue;   */
+}
+
+/* @media screen and (max-width: 550px) {
+  .mid-content .p1, .mid-content .p2{
+      width: 90%;
+  }
+  .mid-content .p3{
+      margin-top: 10px;
+  }
+  .big-card1{
+      display: flex;
+      flex-direction: column;
+  }
+  .big-card1 .image{
+      width: 100%;
+  }
+  .big-card1 .content{
+      width: 100%;
+  }
+  .big-card1 .content button{
+      width: 40%;
+  }
+
+} */
 /*---------------scooter-------------------*/
 .scooter{
     width: 100%;
@@ -217,6 +343,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 .skateboard .container{
     width: 30%;
@@ -335,3 +462,154 @@ button {
 .links{
     background-color: black;
 }
+/* ------------------Accessories---------------- */
+.boosted h1{
+  text-align: center;
+  font-size: 32px;
+  line-height: 36px;
+}
+.boosted h1:hover{
+  color: rgb(255,74,50);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+
+}
+.misc{
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  margin: 3% 0;
+}
+.boosted .misc .acc{
+  /* border: 2px solid green; */
+  min-width: 10%;
+}
+.boosted .acc img{
+  width: 100%;
+}
+.boosted .misc .acc .p1{
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: rgb(255,74,50);
+}
+.boosted .misc .acc .p2{
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center; 
+}
+/* ----------------black-sec------------------------ */
+
+.black-sec{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2% 1%;
+}
+.black-sec .card{
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.black-sec .card img{
+  width: 30%;
+}
+.black-sec .card h1, .black-sec .card p{
+  color: white;
+}
+.black-sec .card h1{
+  font-size: 32px;
+  line-height: 36px;
+}
+.black-sec .card p{
+  text-align: center;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+/* @media screen and (max-width: 550px){
+  .black-sec{
+      flex-direction: column;
+  }
+  .black-sec .card{
+      width: 100%;
+  }
+  .black-sec .card img{
+      width: 25%;
+  }
+} */
+/* ----------------------footer-------------------- */
+
+
+footer{
+  width: 100%;
+  padding: 3% 0;
+  /* border: 2px solid green; */
+  background-color: rgb(247,247,247);
+  display: flex;
+  justify-content: space-around;
+}
+footer img{
+  width: 15%;
+  height: 30%;
+}
+footer h2{
+  font-size: 20px;
+  line-height: 30px;
+}
+footer .explore ul, footer .aboutUSA ul{
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+footer .explore ul li:hover{
+  color:  rgb(255,74,50);
+}
+
+footer .aboutUSA {
+  width: 32%;
+}
+
+footer .aboutUSA p{
+  margin-top: 4%;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+footer .aboutUSA ul{
+  margin-top: 5%;
+  cursor: text;
+}
+
+.last{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8%;
+  margin:2% 0;
+  flex-wrap: wrap;
+}
+.last p{
+  font-size: 13px;
+}
+.last p span{
+  color:  rgb(255,74,50);
+  cursor: pointer;
+}
+
+/* @media screen and (max-width: 550px){
+  footer{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+} */
